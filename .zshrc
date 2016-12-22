@@ -85,3 +85,13 @@ alias h="clear;pwd;echo;ls -F;echo"
 alias h2="clear;pwd;echo;ls -alF;echo"
 alias h3="clear;pwd;echo;ls -aF;echo"
 alias ht="clear;pwd;echo;tree;echo"
+
+# Lazy ancestor directory ziggurat of doom (from geeksam)
+alias        ..='cd ..'
+alias       ...='cd ../..'
+alias      ....='cd ../../..'
+alias     .....='cd ../../../..'
+alias    ......='cd ../../../../..'
+alias   .......='cd ../../../../../..'
+alias  ........='cd ../../../../../../..'
+alias .........='cd ../../../../../../../..'
