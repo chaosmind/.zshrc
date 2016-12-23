@@ -5,7 +5,7 @@ export ZSH=/home/rob/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="fino"
+ZSH_THEME="dpoggi"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,6 +51,8 @@ plugins=(git)
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
+# Current Mac stuff for work, obviously brittle:
+export PATH="/Users/rob/.sdkman/candidates/maven/current/bin:/Users/rob/.sdkman/candidates/groovy/current/bin:/Users/rob/.sdkman/candidates/gradle/current/bin:/Users/rob/.sdkman/candidates/springboot/current/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,6 +87,8 @@ alias h="clear;pwd;echo;ls -F;echo"
 alias h2="clear;pwd;echo;ls -alF;echo"
 alias h3="clear;pwd;echo;ls -aF;echo"
 alias ht="clear;pwd;echo;tree;echo"
+alias clean="grep -Ev '^#|^$'"
+alias fuck="sudo $(history -p !!)"  # repeat last command with sudo
 
 # Lazy ancestor directory ziggurat of doom (from geeksam)
 alias        ..='cd ..'
