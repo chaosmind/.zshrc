@@ -80,15 +80,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias l="ls -alF"
-alias l2="echo;ls -lF;echo"
-alias l3="echo;ls -F -d1 --color=auto .*;echo"
-alias h="clear;pwd;echo;ls -F;echo"
-alias h2="clear;pwd;echo;ls -alF;echo"
-alias h3="clear;pwd;echo;ls -aF;echo"
+alias l="ls -alhF"
+alias l2="echo;ls -lhF;echo"
+alias l3="echo;ls -hF -d1 --color=auto .*;echo"
+alias h="clear;pwd;echo;ls -hF;echo"
+alias h2="clear;pwd;echo;ls -alhF;echo"
+alias h3="clear;pwd;echo;ls -ahF;echo"
 alias ht="clear;pwd;echo;tree;echo"
 alias clean="grep -Ev '^#|^$'"
 alias fuck="sudo $(history -p !!)"  # repeat last command with sudo
+ql () { qlmanage -p "$*" >& /dev/null; } # ql:           Opens any file in MacOS Quicklook Preview
+trash () { command mv "$@" ~/.Trash ; } # trash:        Moves a file to the MacOS trash
 
 # Lazy ancestor directory ziggurat of doom (from geeksam)
 alias        ..='cd ..'
