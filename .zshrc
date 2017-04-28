@@ -83,14 +83,20 @@ source $ZSH/oh-my-zsh.sh
 alias l="ls -alhF"
 alias l2="echo;ls -lhF;echo"
 alias l3="echo;ls -hF -d1 --color=auto .*;echo"
+alias ls="ls -hFG"
+alias ll="ls -halF"
 alias h="clear;pwd;echo;ls -hF;echo"
 alias h2="clear;pwd;echo;ls -alhF;echo"
 alias h3="clear;pwd;echo;ls -ahF;echo"
 alias ht="clear;pwd;echo;tree;echo"
 alias htd="clear;pwd;echo;tree -d;echo"
+alias iftop="sudo /usr/local/sbin/iftop"
+alias jmeter="open /usr/local/bin/jmeter"
+p="ps -ef | less"
 alias clean="grep -Ev '^#|^$'"
 ql () { qlmanage -p "$*" >& /dev/null; } # ql:           Opens any file in MacOS Quicklook Preview
 trash () { command mv "$@" ~/.Trash ; } # trash:        Moves a file to the MacOS trash
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # Lazy ancestor directory ziggurat of doom (from geeksam)
 alias        ..='cd ..'
