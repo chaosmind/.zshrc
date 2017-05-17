@@ -80,19 +80,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias l="ls -alhF"
+alias l="ls -halF"
 alias l2="echo;ls -lhF;echo"
 alias l3="echo;ls -hF -d1 --color=auto .*;echo"
 alias ls="ls -hFG"
 alias ll="ls -halF"
-alias h="clear;pwd;echo;ls -hF;echo"
-alias h2="clear;pwd;echo;ls -alhF;echo"
+alias h="clear;pwd;echo;ls -halF;echo"  # Go Home
+alias h2="clear;pwd;echo;ls -hF;echo"
 alias h3="clear;pwd;echo;ls -ahF;echo"
 alias ht="clear;pwd;echo;tree;echo"
 alias htd="clear;pwd;echo;tree -d;echo"
 alias iftop="sudo /usr/local/sbin/iftop"
 alias jmeter="open /usr/local/bin/jmeter"
 p="ps -ef | less"
+alias c="grep -Ev '^#|^$'"  # Clean view of files
 alias clean="grep -Ev '^#|^$'"
 ql () { qlmanage -p "$*" >& /dev/null; } # ql:           Opens any file in MacOS Quicklook Preview
 trash () { command mv "$@" ~/.Trash ; } # trash:        Moves a file to the MacOS trash
