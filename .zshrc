@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias omz="atom ~/.oh-my-zsh"
 alias l="ls -halF"
 alias l2="echo;ls -lhF;echo"
 alias l3="echo;ls -hF -d1 --color=auto .*;echo"
