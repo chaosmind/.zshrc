@@ -93,7 +93,7 @@ alias ht="clear;pwd;echo;tree;echo"
 alias htd="clear;pwd;echo;tree -d;echo"
 alias iftop="sudo /usr/local/sbin/iftop"
 alias jmeter="open /usr/local/bin/jmeter"
-p="ps -ef | less"
+alias p="ps -ef | less"
 alias c="grep -Ev '^#|^$'"  # Clean view of files
 alias clean="grep -Ev '^#|^$'"
 ql () { qlmanage -p "$*" >& /dev/null; } # ql:           Opens any file in MacOS Quicklook Preview
